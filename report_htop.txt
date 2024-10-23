@@ -1,0 +1,12 @@
+ observations:
+  evaluation_if_server_could_handle_load:
+    - performance_metrics:
+        - stable_memory: 732M/1.92G  # Here you can note how many requests per second maintained stable memory usage
+        - cpu_load_average: 11% & 24% (2 cores) # Here you can note what average CPU load percentage was maintained
+
+  specification_of_excessive_resource_usage:
+    - cpu_peak_usage:
+        - observed: false  # Indicate if a CPU usage peak of 90% was observed during the first few minutes of maximum load (the value would be true or false)
+        - peak_percentage: 55
+        - request_count_at_peak:
+            - value:  1000 x 10 # Here you can note the specific number of requests at which the peak occurred
